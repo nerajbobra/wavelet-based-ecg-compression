@@ -69,7 +69,7 @@ Below is a visual example of the bit packing process for an example where N=4:
   
 ## 9. Compress Binary Map
 The binary map consists of lots of repeated one's and zero's. One of the easiest (and quite effective) ways of compressing data with repetitive patterns is Variable Run-Length Encoding. The premise is to represent each number as a count. Since there is always going to be either a zero or a one in the binary map, and it will always switch, only the following two pieces of information need to be stored:  
--the initial value (either a zero or a one)
+-the initial value (either a zero or a one)  
 -the run count, which is reset every time we switch from zero to one or vice versa
 
 The diagram below explains the encoding scheme for the implementation of Variable Run-Length Encoding:
